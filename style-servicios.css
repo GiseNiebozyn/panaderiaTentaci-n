@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(250, 235, 215);
+}
+
+/* Aquí agregas la configuración para los enlaces */
+a {
+    color: #000000; /* Reemplaza con el color que desees */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000; /* Reemplaza con el color para enlaces visitados */
+}
+
+a:hover {
+    color: #000000; /* Reemplaza con el color cuando el mouse está sobre el enlace */
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back {
+    padding: 32px 0;
+    background-color: rgba(222, 184, 135);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+  
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.logo img {
+    width: 65px;  /* Ajusta el tamaño según sea necesario */
+    height: auto;  /* Mantén las proporciones correctas */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 25px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .back {
+        padding: 50px 0;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(255, 195, 127);
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+.gallery img {
+    margin-top: 35px;
+    width: 60%;  /* Ajusta el tamaño de la imagen al 60% del contenedor */
+    max-width: 600px;  /* Establece un tamaño máximo para la imagen */
+    height: auto;  /* Mantiene las proporciones de la imagen */
+    display: block;
+   
+    margin: 20px auto 0; 
+}
+
+.features-container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.feature-item {
+    text-align: center;
+    width: 28%;
+}
+
+.feature-item img {
+    width: 50px;  /* Ajusta el tamaño según necesites */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.feature-divider {
+    height: 40px;
+    width: 1px;
+    background-color: rgb(139, 69, 19);
+}
+
+footer {
+    background-color: rgb(139, 69, 19);
+    padding: 20px 0;
+}
+
+.logo-fut {
+    width: 100px; /* Ajuste de tamaño para pantallas más pequeñas */
+    height: 100px;
+    margin: 0 auto 20px; /* Margen para separar en móviles */
+    text-align: center;
+}
+
+.logo-fut img {
+    width: 100%;
+    height: auto;
+}
+
+.contenedor-fut {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #BA9983;
+    padding: 20px;
+}
+
+.col1, .col2, .col3 {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio entre columnas en móviles */
+    text-align: center;
+}
+
+.col2 img {
+    width: 40px;
+    margin: 5px;
+}
+
+.col2 .ig, .col2 .fb {
+    justify-content: center; /* Centrar en pantallas pequeñas */
+}
+
+@media(min-width: 768px) {
+    .col1, .col2, .col3 {
+        width: 30%; /* Tres columnas en pantallas medianas o mayores */
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .final {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.copy, .politic {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media(min-width: 768px) {
+    .copy, .politic {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .copy {
+        text-align: left;
+    }
+
+    .politic {
+        text-align: right;
+    }
+}
