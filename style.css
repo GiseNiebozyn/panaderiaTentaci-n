@@ -345,7 +345,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     color: #0c0c0c;
-    padding: 20px;
+    padding: 20px; 
 }
 
 .col1, .col2, .col3 {
