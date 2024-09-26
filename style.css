@@ -121,7 +121,7 @@ a:hover {
     width: 1000px;
     overflow: hidden;
     margin: 50px auto 0;
-    position: relative;;
+    position: relative;
 }
 
 .slider-box ul {
@@ -142,13 +142,14 @@ a:hover {
 
 @keyframes slide {
     0% { margin-left: 0; }
-    20% { margin-left: 0; }
-    25% { margin-left: -100%; }
-    45% { margin-left: -100%; }
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
-    75% { margin-left: -300%; }
-    100% { margin-left: -300%; }
+    20% { margin-left: 0; }   /* Muestra la primera imagen */
+    25% { margin-left: -100%; } /* Mueve a la segunda imagen */
+    45% { margin-left: -100%; } /* Muestra la segunda imagen */
+    50% { margin-left: -200%; } /* Mueve a la tercera imagen */
+    70% { margin-left: -200%; } /* Muestra la tercera imagen */
+    75% { margin-left: -100%; } /* Vuelve a la segunda imagen */
+    95% { margin-left: -100%; } /* Mantiene la segunda imagen */
+    100% { margin-left: 0; }    /* Vuelve a la primera imagen */
 }
 
 @media(max-width: 991px) {
