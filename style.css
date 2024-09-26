@@ -118,9 +118,10 @@ a:hover {
 }
 
 .slider-box {
-    width: 1000px;
+    width: 100%;
     overflow: hidden;
     margin: 50px auto 0;
+    position: relative;
 }
 
 .slider-box ul {
@@ -321,7 +322,7 @@ a:hover {
     background-color: rgb(139, 69, 19);
 }
 footer {
-    background-color: rgb(241, 171, 121);
+    background-color: rgb(139, 69, 19);;
     padding: 20px 0;
 }
 
